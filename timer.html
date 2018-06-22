@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Timer</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"
+                integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                crossorigin="anonymous">
+        </script>
+        <link rel="stylesheet" type="text/css" href="timer.css"> 
+    </head>
+
+    <body>
+
+        <!--TIMER APP-------------------------------------------------------------------------->
+        <div class="container">
+
+            <div class="center">
+                <h1>Timer</h1>
+            </div>
+
+            <div class="center">
+                <p id="html-timer">Time Elapsed: 0 seconds<!--Days Hours Minutes Seconds--></p>
+            </div>
+
+            <div class="button-box center">
+                <button class="btn btn-green"  onclick="timerOn()" id="start">Start</button>
+                <button class="btn btn-red"    onclick="timerOff()"          >Stop </button>
+                <button class="btn btn-yellow" onclick="timerReset()"        >Reset</button>
+            </div>
+
+        </div>
+        <!--/TIMER APP------------------------------------------------------------------------->
+
+        <script src="./html_timer.js"></script>
+    </body>
+
+</html>
+<!--
+List of technical difficulties solved:
+Display's this 1m:0s instead of 1m:60s
+Display time in both the browser and the console
+Functioning buttons
+Interactive looking buttons
+Text border better seperates the colors of white text and yellow background
+Made code very readable
+Fixed potential console log clutter from multiple button presses
+Downsized much of the code
+
+List of technical difficulties unsolved:
+Display contents on the very center of the viewport
+Unable to display digital clock like font
+Was unable to use jQuery without console error messages
+
+Features to add:
+Keyboard shortcuts
+Stop watch animation
+Hourglass animation
+Clock animation
+Multiple Time posts
+Digital Clock Font
+-->

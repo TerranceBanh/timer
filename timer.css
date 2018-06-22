@@ -1,0 +1,157 @@
+/*==============================
+
+    Page Layout Classes
+
+==============================*/
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    margin-top: 35vh;
+    margin-bottom: 35vh;
+}
+
+.center{
+    display:flex;
+    justify-content:space-around;
+}
+
+/*==============================
+
+    Button Classes
+
+==============================*/
+
+.btn {
+    position: relative;
+    border: none;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1.4rem;
+    font-weight: 900;
+    outline: none;
+}
+    .btn:active {
+        top: 3px;
+        left: -3px;
+    }
+    .btn::before {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 0px;
+        left: -6px;
+    }
+        .btn:active::before {
+            top: 0px;
+            left: -3px;
+    }
+    .btn::after {
+        position: absolute;
+        display: block;
+        content: "";
+        bottom: -5px;
+        right: 0px;
+    }
+        .btn:active::after {
+            bottom: -3px;
+            right: 0px;
+        }
+
+.btn-green{
+    background: green;
+    box-shadow: -6px 5px 0 hsl(140, 100%, 10%);
+}
+    .btn-green:hover{
+        background: hsl(120, 100%, 20%);
+    }
+    .btn-green:active{
+        background: hsl(120, 100%, 15%);
+        box-shadow: -3px 3px 0 hsl(140, 100%, 10%);
+    }
+    .btn-green::before{
+        border: solid 5px transparent;
+        border-right: solid 6px hsl(140, 100%, 10%);
+        border-left-width: 0px;
+    }
+        .btn-green:active::before{
+            border: solid 3px transparent;
+            border-right: solid 3px hsl(140, 100%, 10%);
+            border-left-width: 0px;
+        }
+    .btn-green:after{
+        border: solid 6px transparent;
+        border-top: solid 5px hsl(140, 100%, 10%);
+        border-bottom-width: 0px;
+    }
+        .btn-green:active::after{
+            border: solid 3px transparent;
+            border-top: solid 3px hsl(140, 100%, 10%);
+            border-bottom-width: 0px;
+        }
+
+.btn-red{
+    background: red;
+    box-shadow: -6px 5px 0 hsl(0, 100%, 20%);
+}
+    .btn-red:hover{
+        background: hsl(0, 100%, 40%);
+    }
+    .btn-red:active{
+        background: hsl(0, 100%, 35%);
+        box-shadow: -3px 3px 0 hsl(0, 100%, 20%);
+    }
+    .btn-red::before{
+        border: solid 5px transparent;
+        border-right: solid 6px hsl(0, 100%, 20%);
+        border-left-width: 0px;
+    }
+        .btn-red:active::before{
+            border: solid 3px transparent;
+            border-right: solid 3px hsl(0, 100%, 20%);
+            border-left-width: 0px;
+        }
+    .btn-red:after{
+        border: solid 6px transparent;
+        border-top: solid 5px hsl(0, 100%, 20%);
+        border-bottom-width: 0px;
+    }
+        .btn-red:active::after{
+            border: solid 3px transparent;
+            border-top: solid 3px hsl(0, 100%, 20%);
+            border-bottom-width: 0px;
+        }
+
+.btn-yellow{
+    background: #e6e600;
+    box-shadow: -6px 5px 0 hsl(60, 100%, 20%);
+}
+    .btn-yellow:hover{
+        background: hsl(60, 100%, 43%);
+    }
+    .btn-yellow:active{
+        background: hsl(60, 100%, 40%);
+        box-shadow: -3px 3px 0 hsl(60, 100%, 20%);
+    }
+    .btn-yellow::before{
+        border: solid 5px transparent;
+        border-right: solid 6px hsl(60, 100%, 20%);
+        border-left-width: 0px;
+    }
+        .btn-yellow:active::before{
+            border: solid 3px transparent;
+            border-right: solid 3px hsl(60, 100%, 20%);
+            border-left-width: 0px;
+        }
+    .btn-yellow:after{
+        border: solid 6px transparent;
+        border-top: solid 5px hsl(60, 100%, 20%);
+        border-bottom-width: 0px;
+    }
+        .btn-yellow:active::after{
+            border: solid 3px transparent;
+            border-top: solid 3px hsl(60, 100%, 20%);
+            border-bottom-width: 0px;
+        }
